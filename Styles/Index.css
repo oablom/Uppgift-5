@@ -1,0 +1,214 @@
+/* Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset*/
+
+body
+    {
+        background: rgba(55, 6, 23, 1);
+        height: 700px;
+        width: 1152px;
+
+    }
+
+
+    .box1, .box2, .box3, .box4, .box5, .box6 {
+        background: rgba(244, 140, 6, 1);
+        position: absolute;
+        width: 458px;
+        height: 150px;
+        border-radius: 8px;
+        display: flex;
+        padding: 10px;
+        
+        
+    }
+
+    /* <Container 1> */
+    .box1 {
+        margin-left: 98px;
+        margin-top: 90px;
+        justify-content: flex-start;
+        align-items: flex-end;  
+    }
+    
+    .box1__sub {
+        background: rgba(157, 2, 8, 1);
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        margin: 10px;
+        height: 78px;
+        width: 78px;
+        border-radius: 4px;
+        
+    }
+    /* </Container 1> */
+
+    /* <Container 2> */
+    .box2 {
+        margin-left: 586px;
+        margin-top: 90px;
+        justify-content: center;
+    }
+
+    .box2__sub {
+        background: rgba(157, 2, 8, 1);
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        margin: 10px;
+        height: 120px;
+        width: 78px;
+        border-radius: 4px;
+    }
+    /* </Container 2> */
+    
+    /* <Container 3> */
+    .box3 {
+        margin-left: 98px;
+        margin-top: 270px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .box3__sub {
+        background: rgba(157, 2, 8, 1);
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        margin: 10px;
+        height: 78px;
+        width: 78px;
+        border-radius: 4px;
+    }
+    /* </Container 3> */
+
+    /* <Container 4> */
+    .box4 {
+        margin-left: 586px;
+        margin-top: 270px;
+        justify-content: space-between;
+    }
+
+    .box4__sub {
+        background: rgba(157, 2, 8, 1);
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        margin: 10px;
+        height: 78px;
+        width: 78px;
+        border-radius: 4px;
+        justify-content: center;
+    }
+
+    .box4__sub:last-child {    
+        align-self: flex-end;
+
+    }
+    
+    /* </Container 4> */
+
+    /* <Container 5> */
+    .box5 {
+        margin-left: 98px;
+        margin-top: 450px;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        width: 438px;
+        height: 130px;
+        border-radius: 8px;
+        display: flex;
+        padding: 20px;
+    }
+
+    .box5__sub {
+        background: rgba(157, 2, 8, 1);
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        
+        height: 78px;
+        width: 78px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .box5text { 
+        margin-top: 34px;
+    }
+    .box5text2 { 
+        margin-top: 15px;
+    } /* Dessa är de enda sätt jag får det att  fungera
+    att få texten precis som jag vill */
+  
+    .box5__sub:nth-child(1) {height: 120px;}
+    .box5__sub:nth-child(3) {height: 120px;}
+/* Jag får det inte att fungeera med
+ .box5__sub:first-child:last-child {height: 120px;} 
+ så skriver dom var för sig.*/
+    /* </Container 5> */
+
+    /* <Container 6> */
+    .box6 {
+       
+        margin-left: 586px;
+        margin-top: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box6__sub {
+        background: rgba(157, 2, 8, 1);
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        margin: 10px;
+        height: 78px;
+        width: 78px;
+        border-radius: 4px;
+       
+    }
+
+    .box6__sub:nth-child(2) {
+        width: 156px;
+    }
+
+    /* </Container 6> */
