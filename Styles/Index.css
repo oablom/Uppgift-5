@@ -53,162 +53,107 @@ body
 
     }
 
+    .Squares {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-    .box1, .box2, .box3, .box4, .box5, .box6 {
+    .box {
         background: rgba(244, 140, 6, 1);
-        position: absolute;
         width: 458px;
         height: 150px;
         border-radius: 8px;
         display: flex;
-        padding: 10px;
-        
-        
+        padding: 10px; 
+        margin: 10px;
+    }
+
+    .box__sub {
+        background: rgba(157, 2, 8, 1);
+        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        margin: 10px;
+        min-height: 78px;
+        width: 78px;
+        border-radius: 4px;
     }
 
     /* <Container 1> */
-    .box1 {
-        margin-left: 98px;
-        margin-top: 90px;
+    .box:first-child {
         justify-content: flex-start;
         align-items: flex-end;  
     }
     
-    .box1__sub {
-        background: rgba(157, 2, 8, 1);
-        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-        margin: 10px;
-        height: 78px;
-        width: 78px;
-        border-radius: 4px;
-        
-    }
     /* </Container 1> */
 
     /* <Container 2> */
-    .box2 {
-        margin-left: 586px;
-        margin-top: 90px;
+    .box:nth-child(2) {
+        align-items: stretch;
         justify-content: center;
     }
 
-    .box2__sub {
-        background: rgba(157, 2, 8, 1);
-        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-        margin: 10px;
-        height: 120px;
-        width: 78px;
-        border-radius: 4px;
+    .box__sub--2 {
+        min-height: 78px;
     }
+
+
+
     /* </Container 2> */
     
     /* <Container 3> */
-    .box3 {
-        margin-left: 98px;
-        margin-top: 270px;
+    .box:nth-child(3) {
         align-items: center;
         justify-content: flex-end;
-    }
-
-    .box3__sub {
-        background: rgba(157, 2, 8, 1);
-        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-        margin: 10px;
-        height: 78px;
-        width: 78px;
-        border-radius: 4px;
     }
     /* </Container 3> */
 
     /* <Container 4> */
-    .box4 {
-        margin-left: 586px;
-        margin-top: 270px;
+    .box:nth-child(4) {
         justify-content: space-between;
+        align-items: flex-start; 
     }
-
-    .box4__sub {
-        background: rgba(157, 2, 8, 1);
-        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-        margin: 10px;
-        height: 78px;
-        width: 78px;
-        border-radius: 4px;
-        justify-content: center;
-    }
-
-    .box4__sub:last-child {    
+    
+    .box__sub-43 {
+        display: flex;
         align-self: flex-end;
-
     }
     
     /* </Container 4> */
 
     /* <Container 5> */
-    .box5 {
-        margin-left: 98px;
-        margin-top: 450px;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-around;
-        width: 438px;
-        height: 130px;
-        border-radius: 8px;
-        display: flex;
-        padding: 20px;
+    .box:nth-child(5) {
+        align-items: baseline;
+        justify-content: space-evenly;
     }
 
-    .box5__sub {
-        background: rgba(157, 2, 8, 1);
-        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: 12px;
-        
-        height: 78px;
-        width: 78px;
-        border-radius: 4px;
-        display: flex;
-        justify-content: center;
-        
+    .box__sub-5 {
+        align-self: stretch;
     }
+
+    .box__sub-52 {
+        align-self: center;
+    }
+        
     .box5text { 
         margin-top: 34px;
+        align-self: center;
     }
     .box5text2 { 
         margin-top: 15px;
-    } /* Dessa är de enda sätt jag får det att  fungera
-    att få texten precis som jag vill */
-  
-    .box5__sub:nth-child(1) {height: 120px;}
-    .box5__sub:nth-child(3) {height: 120px;}
-/* Jag får det inte att fungeera med
- .box5__sub:first-child:last-child {height: 120px;} 
- så skriver dom var för sig.*/
+    }
+ 
     /* </Container 5> */
 
     /* <Container 6> */
-    .box6 {
-       
-        margin-left: 586px;
-        margin-top: 450px;
+    .box:nth-child(6) {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .box6__sub {
-        background: rgba(157, 2, 8, 1);
-        box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-        margin: 10px;
-        height: 78px;
-        width: 78px;
-        border-radius: 4px;
-       
-    }
-
-    .box6__sub:nth-child(2) {
-        width: 156px;
+    .box1__sub-box62 {
+        flex-grow: 2;
+        align-items: baseline;
     }
 
     /* </Container 6> */
