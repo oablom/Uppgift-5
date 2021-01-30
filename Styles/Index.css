@@ -124,13 +124,17 @@ body
         align-self: center;
     }
 
-    /* Detta gör att texten hamnar rätt .Text1 { padding-top: 34px;
+    p {font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;}
+
+/* Detta göra att texten hamnar rätt    
+    .Text1 {margin-top: 34px;
     }
-    .Text2 { padding-top: 11px;
-
-    } */
-
-    
+    .Text2 {margin-top: 11px;
+     } */
 
     /* </Container 5> */
 
