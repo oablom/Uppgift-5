@@ -83,21 +83,14 @@ body
         justify-content: flex-start;
         align-items: flex-end;  
     }
-    
     /* </Container 1> */
 
     /* <Container 2> */
     .box:nth-child(2) {
-        align-items: stretch;
         justify-content: center;
     }
 
-    .box__sub--2 {
-        min-height: 78px;
-    }
-
-
-
+    /* Provade ha min-height här och enbart height under .box__sub men  */
     /* </Container 2> */
     
     /* <Container 3> */
@@ -122,26 +115,20 @@ body
 
     /* <Container 5> */
     .box:nth-child(5) {
-        align-items: baseline;
         justify-content: space-evenly;
+        text-align: center;
+        color: white;
     }
 
-    .box__sub-5 {
-        align-self: stretch;
+    .box__sub--51 {
+        align-items: baseline;
     }
 
-    .box__sub-52 {
+    .box__sub--51:nth-child(2) {
         align-self: center;
     }
-        
-    .box5text { 
-        margin-top: 34px;
-        align-self: center;
-    }
-    .box5text2 { 
-        margin-top: 15px;
-    }
- 
+  
+
     /* </Container 5> */
 
     /* <Container 6> */
@@ -155,5 +142,6 @@ body
         flex-grow: 2;
         align-items: baseline;
     }
+
 
     /* </Container 6> */
